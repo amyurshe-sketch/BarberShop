@@ -33,12 +33,13 @@ module.exports = async (req, res) => {
       if (result.ok) {
         res.status(200).json({ status: 'success', message: 'Заявка отправлена!' });
       } else {
-        throw new Error('Ошибка Telegram API');
+        console.error('Telegram API error:', result);
+        res.status(500).json({ status: 'error', message: 'Ошибка Telegram API' });
       }
       
     } catch (error) {
       console.error('Error:', error);
-      res.status(500).json({ status: 'error', message: 'Ошибка отправки' });
+      res.status(500).json({ status: 'error', message: 'Ошибка сервера' });
     }
   } else {
     res.status(405).json({ status: 'error', message: 'Method not allowed' });

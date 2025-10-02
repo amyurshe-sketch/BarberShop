@@ -531,8 +531,15 @@
             const service = formData.get('service');
             const message = formData.get('message') || 'Без дополнительных пожеланий';
 
+            // Показываем loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Отправка...';
+            submitBtn.disabled = true;
+
             // Отправка через защищенный Vercel API endpoint
-            fetch('/api/telegram', {
+            // ВАЖНО: Замените YOUR_ACTUAL_DOMAIN на ваш реальный домен Vercel
+            fetch('https://barber-shop-self-rho.vercel.app/api/telegram', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -544,7 +551,12 @@
                     message: message
                 })
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
             .then(data => {
                 if (data.status === 'success') {
                     alert('Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.');
@@ -556,12 +568,17 @@
                         'event_label': 'telegram_form'
                     });
                 } else {
-                    throw new Error('Ошибка отправки');
+                    throw new Error('Ошибка отправки от сервера');
                 }
             })
-            .catch(error) => {
+            .catch(error => {
                 console.error('Error:', error);
                 alert('Произошла ошибка при отправке заявки. Пожалуйста, попробуйте еще раз или свяжитесь с нами по телефону.');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
             });
         });
 

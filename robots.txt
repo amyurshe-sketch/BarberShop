@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://barber-shop-self-rho.vercel.app/sitemap.xml

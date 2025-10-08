@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# Блокируем служебные пути
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Указываем правильный sitemap
 Sitemap: https://barber-shop-self-rho.vercel.app/sitemap.xml

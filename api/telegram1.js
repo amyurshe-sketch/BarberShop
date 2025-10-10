@@ -29,13 +29,13 @@ export default async function handler(req, res) {
     const text = `📌 Новая заявка с сайта:\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n✂️ Услуга: ${service}\n💬 Сообщение: ${message || 'Без дополнительных пожеланий'}\n\n🌐 Источник: Демо-сайт барбершопа`;
 
     // Отправляем в Telegram
-    const telegramResponse = await fetch('https://api.telegram.org/bot7937469020:AAHk33stXSsPwtgXvLqNFN5JQwwAEYIAuLI/sendMessage', {
+    const telegramResponse = await fetch('https://api.telegram.org/botgXvLqNFN5JQwwAEYIAuLI/sendMessage', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        chat_id: '7704061401',
+        chat_id: '701',
         text: text,
         parse_mode: 'HTML'
       })

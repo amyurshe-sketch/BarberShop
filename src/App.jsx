@@ -145,17 +145,16 @@ const bookingOptions = [
 
 const galleryItems = [
   {
-    src: 'https://barber-shop-self-rho.vercel.app/image/image_3.jpeg',
+    src: '/image/image_3.jpeg',
     altKey: 'gallery.image1.alt',
   },
   {
-    src: 'https://barber-shop-self-rho.vercel.app/image/image_4.jpeg',
+    src: '/image/image_4.jpeg',
     altKey: 'gallery.image2.alt',
   },
 ]
 
-const TELEGRAM_ENDPOINT =
-  'https://barber-shop-self-rho.vercel.app/api/telegram'
+const TELEGRAM_ENDPOINT = '/api/telegram'
 
 function App() {
   const getInitialLanguage = () => {
@@ -405,7 +404,7 @@ function App() {
           <div className="about-content">
             <div>
               <img
-                src="https://barber-shop-self-rho.vercel.app/image/image_2.jpeg"
+                src="/image/image_2.jpeg"
                 alt={t('about.subtitle')}
                 className="about-image"
               />
@@ -451,7 +450,7 @@ function App() {
         <div className="container">
           <div className="master-content">
             <img
-              src="https://barber-shop-self-rho.vercel.app/image/image_6.jpeg"
+              src="/image/image_6.jpeg"
               alt={t('master.subtitle')}
               className="master-image"
             />
@@ -507,7 +506,7 @@ function App() {
           <h2 className="tools-title">{t('tools.title')}</h2>
           <p className="tools-description">{t('tools.description')}</p>
           <img
-            src="https://barber-shop-self-rho.vercel.app/image/image_5.jpeg"
+            src="/image/image_5.jpeg"
             alt={t('tools.title')}
             className="tools-image"
           />
@@ -531,7 +530,7 @@ function App() {
       >
         <div className="modal-content">
           <img
-            src="https://barber-shop-self-rho.vercel.app/image/image_7.jpeg"
+            src="/image/image_7.jpeg"
             alt={t('modal.title')}
             className="success-image"
           />

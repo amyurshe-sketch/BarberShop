@@ -58,63 +58,66 @@ const translations = {
       'An error occurred while sending the application. Please try again or contact us by phone.',
     'footer.copyright': '© 2024 BarberPro. All rights reserved.',
   },
-  ru: {
-    'nav.home': 'Главная',
-    'nav.about': 'О нас',
-    'nav.services': 'Услуги',
-    'nav.gallery': 'Галерея',
-    'nav.master': 'Мастер',
-    'nav.contact': 'Запись',
-    'hero.title': 'Профессиональный барбершоп',
-    'hero.subtitle': 'Искусство стрижки и бритья в руках мастеров',
-    'hero.button': 'Записаться онлайн',
-    'about.title': 'Наша команда',
-    'about.subtitle': 'Профессионалы своего дела',
+  fr: {
+    'nav.home': 'Accueil',
+    'nav.about': 'À propos',
+    'nav.services': 'Services',
+    'nav.gallery': 'Galerie',
+    'nav.master': 'Maître',
+    'nav.contact': 'Réservation',
+    'hero.title': 'Barbershop professionnel',
+    'hero.subtitle':
+      'Le savoir-faire de la coupe et du rasage entre des mains expertes',
+    'hero.button': 'Réserver en ligne',
+    'about.title': 'Notre équipe',
+    'about.subtitle': 'Professionnels confirmés',
     'about.text1':
-      'Наша команда опытных барберов с многолетним опытом работы готова создать для вас идеальный образ. Мы следим за последними тенденциями в мире мужских стрижек и всегда рады предложить индивидуальный подход к каждому клиенту.',
+      'Notre équipe de barbiers expérimentés, forte de nombreuses années de pratique, est prête à créer le look idéal pour vous. Nous suivons les dernières tendances des coupes masculines et proposons toujours une approche personnalisée pour chaque client.',
     'about.text2':
-      'В нашем салоне царит атмосфера настоящего мужского клуба, где вы можете расслабиться и довериться профессионалам.',
-    'services.title': 'Наши услуги',
-    'services.service1.title': 'Стрижка "под насадку"',
+      'Notre salon offre une atmosphère de véritable club masculin où vous pouvez vous détendre et faire confiance aux professionnels.',
+    'services.title': 'Nos services',
+    'services.service1.title': 'Coupe à la tondeuse',
     'services.service1.description':
-      'Профессиональная стрижка машинкой с использованием различных насадок',
-    'services.service1.price': '300 руб.',
-    'services.service2.title': 'Модельная стрижка',
+      'Coupe professionnelle à la tondeuse avec différentes longueurs de sabot',
+    'services.service1.price': '300 RUB',
+    'services.service2.title': 'Coupe stylée',
     'services.service2.description':
-      'Создание стильного образа с учетом особенностей волос и формы лица',
-    'services.service2.price': '600 руб.',
-    'gallery.title': 'Наши работы',
-    'gallery.image1.alt': 'Работа мастера',
-    'gallery.image2.alt': 'Процесс стрижки',
-    'master.title': 'Искусство в деталях',
-    'master.subtitle': 'Эталон мастерства и творческого подхода',
+      'Nous créons un style personnalisé en tenant compte de la nature de vos cheveux et de la forme du visage',
+    'services.service2.price': '600 RUB',
+    'gallery.title': 'Nos réalisations',
+    'gallery.image1.alt': 'Travail du maître',
+    'gallery.image2.alt': 'Processus de coupe',
+    'master.title': 'L’art dans les détails',
+    'master.subtitle': 'Référence de savoir-faire et de créativité',
     'master.description':
-      'Наш мастер демонстрирует высший уровень профессионализма. Каждое движение отточено до совершенства, каждая деталь продумана. С бритвой и расческой в руках он создает не просто стрижку, а настоящее произведение искусства, подчеркивающее вашу индивидуальность и стиль.',
-    'contact.title': 'Онлайн запись',
-    'contact.name': 'Ваше имя',
-    'contact.phone': 'Телефон',
-    'contact.service': 'Услуга',
-    'contact.message': 'Дополнительные пожелания',
-    'contact.selectDefault': 'Выберите услугу',
-    'contact.option1': 'Стрижка "под насадку" - 300 руб.',
-    'contact.option2': 'Модельная стрижка - 600 руб.',
-    'contact.placeholder': 'Ваши пожелания...',
-    'contact.button': 'Отправить заявку',
-    'tools.title': 'Профессиональные инструменты',
+      'Notre maître fait preuve d’un professionnalisme absolu. Chaque geste est maîtrisé, chaque détail est réfléchi. Avec un rasoir et un peigne, il crée bien plus qu’une coupe : une véritable oeuvre d’art qui reflète votre style et votre personnalité.',
+    'contact.title': 'Réservation en ligne',
+    'contact.name': 'Votre nom',
+    'contact.phone': 'Téléphone',
+    'contact.service': 'Service',
+    'contact.message': 'Remarques supplémentaires',
+    'contact.selectDefault': 'Choisissez un service',
+    'contact.option1': 'Coupe à la tondeuse - 300 RUB',
+    'contact.option2': 'Coupe stylée - 600 RUB',
+    'contact.placeholder': 'Vos souhaits...',
+    'contact.button': 'Envoyer la demande',
+    'tools.title': 'Outils professionnels',
     'tools.description':
-      'Мы используем только лучшее оборудование и инструменты, чтобы гарантировать безупречный результат каждой стрижки и бритья',
-    'modal.title': 'Спасибо за запись!',
+      'Nous utilisons uniquement des équipements et des outils haut de gamme afin de garantir un résultat impeccable à chaque coupe et à chaque rasage.',
+    'modal.title': 'Merci pour votre réservation !',
     'modal.message':
-      'Мы свяжемся с вами в ближайшее время для подтверждения записи.',
-    'modal.button': 'Закрыть',
-    'alert.required': 'Пожалуйста, заполните все обязательные поля',
+      'Nous vous contacterons bientôt pour confirmer votre rendez-vous.',
+    'modal.button': 'Fermer',
+    'alert.required': 'Merci de renseigner tous les champs obligatoires',
     'alert.success':
-      'Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.',
+      'Votre demande a bien été envoyée ! Nous vous contacterons sous peu.',
     'alert.error':
-      'Произошла ошибка при отправке заявки. Пожалуйста, попробуйте еще раз или свяжитесь с нами по телефону.',
-    'footer.copyright': '© 2024 BarberPro. Все права защищены.',
+      'Une erreur est survenue lors de l’envoi. Veuillez réessayer ou nous appeler.',
+    'footer.copyright': '© 2024 BarberPro. Tous droits réservés.',
   },
 }
+
+const supportedLanguages = Object.keys(translations)
 
 const navItems = [
   { id: 'home', key: 'nav.home' },
@@ -161,7 +164,10 @@ function App() {
     if (typeof window === 'undefined') {
       return 'en'
     }
-    return localStorage.getItem('language') || 'en'
+    const storedLanguage = localStorage.getItem('language')
+    return storedLanguage && supportedLanguages.includes(storedLanguage)
+      ? storedLanguage
+      : 'en'
   }
 
   const getInitialTheme = () => {
@@ -231,7 +237,7 @@ function App() {
   }
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === 'en' ? 'ru' : 'en'))
+    setLanguage((prev) => (prev === 'en' ? 'fr' : 'en'))
   }
 
   const handleAnchorClick = (event, targetId) => {
@@ -340,7 +346,7 @@ function App() {
     ? { background: 'rgba(26, 26, 26, 0.95)', backdropFilter: 'blur(10px)' }
     : {}
 
-  const languageToggleLabel = language === 'en' ? 'RU' : 'EN'
+  const languageToggleLabel = language === 'en' ? 'FR' : 'EN'
   const submitLabel = isSubmitting
     ? `${t('contact.button')}...`
     : t('contact.button')
